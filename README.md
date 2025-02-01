@@ -71,21 +71,28 @@ An automated typing tool that captures text from the screen and types it automat
 
    - ⌨️ Press 'backspace' to start a 15-second typing session
    - ⏹️ Press 'q' to quit at any time
-   - 📸 The tool will automatically:
-     - Capture text from the specified screen area
+   - 📸 The tool uses two capture regions:
+     - First Region (154, 470, 1726, 660): Captures first 3 lines of text
+     - Second Region (177, 531, 1681, 627): Captures last 2 lines of text
+   - 🔄 Automatically switches between regions during typing
+   - 🤖 The tool will:
+     - Capture text from the appropriate screen area
      - Convert it to text using OCR
      - Type it automatically at high speed
 
 3. Features:
    - 🚀 Optimized for speed typing tests
    - 📷 Automatic screenshot saving
-   - 🔄 Continuous text capture and typing
+   - 🔄 Smart region switching for complete text coverage
    - ⚡ Minimal delays for maximum performance
+   - 🎯 Adaptive capture regions for different text positions
 
 ## ⚠️ Notes
 
 - Screen Typer is optimized for MonkeyType but can be adapted for other typing tests
 - Coordinate values may need adjustment based on your screen resolution
+- The dual capture region system ensures complete text coverage during typing tests
+- You may need to adjust the coordinates based on your screen size and MonkeyType window position
 - Screenshots are automatically saved in a `screenshots` directory
 
 ## 🤝 Contributing
